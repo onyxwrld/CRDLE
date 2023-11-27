@@ -18,7 +18,7 @@ export class AppController {
   }
 
   @Get('CRDLE')
-  @Render('CRDLE')
+  @Render('crdle')
   crdle() {
     return {};
   }
