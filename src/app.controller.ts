@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('index')
   @Render('index')
   index() {
     return { message: 'Welcome to the homepage' };
