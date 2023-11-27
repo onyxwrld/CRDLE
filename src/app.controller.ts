@@ -5,9 +5,21 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get()
+  @Render('register')
+  register() {
+    return {};
+  }
+
   @Get('index')
   @Render('index')
   index() {
     return { message: 'Welcome to the homepage' };
+  }
+
+  @Get('CRDLE')
+  @Render('CRDLE')
+  crdle() {
+    return {};
   }
 }
